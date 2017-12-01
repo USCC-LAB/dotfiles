@@ -22,3 +22,8 @@ the code style.
 
 - vimscript
     - Do not use the short name of [setting option](http://vimdoc.sourceforge.net/htmldoc/options.html). For example: Use `set incsearch` instead of `set is`.
+
+### Thanks to ...
+- [Ben Orenstein](http://www.benorenstein.com/) and his [dotfiles  repository](https://github.com/r00k/dotfiles)
+- [Mathias](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
+
