@@ -1,5 +1,7 @@
 # USCC-LAB Dotfiles
 
+Not just be dotfiles. Also provide templates and self-documentation tutorials.
+
 ## Compenonts
 
 ### Fish-shell
