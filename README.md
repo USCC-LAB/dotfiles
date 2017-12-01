@@ -20,3 +20,6 @@ the code style.
 
 - [Google - Shell Style Guide]\
   (https://google.github.io/styleguide/shell.xml)
+
+- vimscript
+    - Do not use the short name of [retting option](http://vimdoc.sourceforge.net/htmldoc/options.html). For example: Use `set incsearch` instead of `set is`.
