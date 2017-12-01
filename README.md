@@ -15,5 +15,8 @@ Not just be dotfiles. Also provide templates and self-documentation tutorials.
 - [Source](https://github.com/neovim/neovim)
 
 ## Coding Style
+This repo aim to be a readable, self-documentation dotfiles repo, Please follow
+the code style.
+
 - [Google - Shell Style Guide]\
   (https://google.github.io/styleguide/shell.xml)
