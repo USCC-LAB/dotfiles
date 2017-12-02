@@ -35,6 +35,39 @@ set autoread
 command W w !sudo tee % > /dev/null
 " }}}
 
+" Basic {{{
+
+" Do not use arrow key in vim
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+
+" Move cursor by display lines when wrapping
+nnoremap j gj
+nnoremap k gk
+
+" TODO: move quickly
+" If you need to originl J or K , do not map this key. See :help J and :help K
+" ===========================================================
+" nnoremap J 5j
+" nnoremap K 5k
+
+" TODO:
+" If you need to originl J or K , do not map this key. See :help H and :help L
+" h is move left one char, so using H move leftest char is goot to memorize
+" L is the same way as H
+" ===========================================================
+" nnoremap H ^
+" nnoremap L $
+
+" TODO: The original u is undo, so use U to redo is easy to memorize
+" If you want to use original U, do not map this key. See :help U
+" ===========================================================
+" nnoremap U :redo<cr>
+
+" }}}
+
 " User interface {{{
 
 " }}}
