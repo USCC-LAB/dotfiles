@@ -94,6 +94,58 @@ vnoremap <slient> # :<C-u>call VisualSelection('','')<CR>?<C-R>=@/<CR><CR>
 " }}}
 
 " Moving aroud tabs and windws {{{
+" TODO: See :help windows-intro to learn what is buffer, window and tab
+
+" Use :vs split vertical, and :sp split horizontal
+" Puts new vsplit windows to the right of the current
+set splitright
+" Puts new split windows to the bottom of the current
+set splitbelow
+
+
+" quick way to move between windows
+" Move the current window to bottom
+noremap <C-j> <C-W>j
+" Move to currnt window to top
+noremap <C-k> <C-W>k
+" Move to currnt window to left
+noremap <C-h> <C-W>h
+" Move to currnt window to right
+noremap <C-l> <C-W>l
+
+
+" Move to the next buffer and the previous buffer
+" TODO: Read :help :ls and remapping the keys you prefer
+" ===========================================================
+" noremap ]b :bnext<cr>
+" noremap [b :bprevious<cr>
+
+" Delete current buffer without closing window
+" TODO: <leader>q is default key mapping. Try to remapping the key you prefer
+" ===========================================================
+" nnoremap <silent> <leader>q :lclose<bar>b#<bar>bd #<CR>
+
+
+
+" Open new tab page
+" TODO: <leader>t is default key mapping. Try to remapping the key you prefer
+" noremap <leader>t :tabnew<cr>
+
+" Move to the next tab and the previous tab
+" ===========================================================
+" noremap ]t :tabnext<cr>
+" noremap [t :tabprev<cr>
+
+" Delete current tab
+" TODO: <leader>qt is default key mapping. Try to remapping the key you prefer
+" ===========================================================
+" nnoremap <silent> <leader>qt :tabclose<cr>
+
+
+" Close all the buffers
+" TODO: <leader>ba is default key mapping. Try to remapping the key you prefer
+" ===========================================================
+" noremap <leader>ba :bufdo bd<cr>
 
 " }}}
 
