@@ -82,6 +82,15 @@ nnoremap k gk
 
 " Visual mode relative {{{
 
+" Visual shifting (does not exit Visual mode)
+vnoremap < <gv
+vnoremap > >gv
+
+" Using * and # like normal mode See :help * and :help #
+" Visual mode pressing * or # searches for the current selection
+vnoremap <slient> * :<C-u>call VisualSelection('','')<CR>/<C-R>=@/<CR><CR>
+vnoremap <slient> # :<C-u>call VisualSelection('','')<CR>?<C-R>=@/<CR><CR>
+
 " }}}
 
 " Moving aroud tabs and windws {{{
