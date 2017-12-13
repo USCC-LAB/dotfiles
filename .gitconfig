@@ -2,6 +2,11 @@
     #name = your name
     #email = your email
 
+[merge]
+    tool=vimdiff
+
+[mergetool]
+    prompt=false
 
 [alias]
 
