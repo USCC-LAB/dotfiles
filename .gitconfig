@@ -2,6 +2,9 @@
     #name = your name
     #email = your email
 
+[core]
+    editor=vim
+
 [merge]
     tool=vimdiff
 
