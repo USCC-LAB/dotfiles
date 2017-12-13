@@ -2,6 +2,12 @@
 
 Not just be dotfiles. Also provide templates and self-documentation tutorials.
 
+## Management
+
+### GNU stow
+- Use `stow` for hooking dotfiles into specified place
+- [Note](https://github.com/gotbletu/shownotes/blob/master/stow.txt)
+
 ## Compenonts
 
 ### Fish-shell
