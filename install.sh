@@ -1,5 +1,9 @@
 #!/usr/bin/env fish
 
+# Create necessary directories
+mkdir -p ~/.config/fish
+mkdir -p ~/.config/nvim
+
 # Use *stow* as a dotfile manager
 
 # Destory symbolic links
