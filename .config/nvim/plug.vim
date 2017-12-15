@@ -15,6 +15,11 @@ Plug 'Yggdroot/indentLine'
 
 " rainbow parentheses
 Plug 'luochen1990/rainbow'
+
+" auto-pair
+Plug 'jiangmiao/auto-pairs'
+
+
 call plug#end()
 
 " color scheme {{{
