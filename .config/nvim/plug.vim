@@ -9,6 +9,10 @@ Plug 'scrooloose/nerdtree'
 " nerdtree-git-plugin
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" indent line
+" Let indent level is visible
+Plug 'Yggdroot/indentLine'
+
 call plug#end()
 
 " color scheme {{{
