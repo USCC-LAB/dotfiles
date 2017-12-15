@@ -13,6 +13,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Let indent level is visible
 Plug 'Yggdroot/indentLine'
 
+" rainbow parentheses
+Plug 'luochen1990/rainbow'
 call plug#end()
 
 " color scheme {{{
@@ -33,3 +35,9 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
 " }}}
+
+" Rainbow Parentheses Improved {{{
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+" }}}
+
+
