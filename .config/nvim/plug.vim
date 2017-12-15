@@ -1,12 +1,20 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
+" gruvbox scheme
+Plug 'morhetz/gruvbox'  
+
 " file navigator
 Plug 'scrooloose/nerdtree'
 " nerdtree-git-plugin
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
+
+" color scheme {{{
+set background=dark
+colorscheme gruvbox
+" }}}
 
 " NERDTree {{{
 
