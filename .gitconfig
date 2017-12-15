@@ -91,7 +91,7 @@
 
   ##########
   # rebase - interactive
-    rb = rebase -i
+    rbi = rebase -i
 
   # rebase - continue the rebasing process after resolving a conflict manually and updating the index with the resolution.
     rbc = rebase --continue
