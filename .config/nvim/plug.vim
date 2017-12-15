@@ -13,6 +13,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" denite
+Plug 'Shougo/denite.nvim'
+
 " indent line
 " Let indent level is visible
 Plug 'Yggdroot/indentLine'
@@ -87,4 +90,80 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 " }}}
 
+" denite {{{
+noremap [denite-leader] <Nop>
+" TODO: Map your denite-leader if you want, defalut is ; key
+nmap ; [denite-leader]
+
+" basic option of denite, See :help denite#custom#option
+call denite#custom#option('_', {
+    \ 'prompt': 'λ:',
+    \ 'winheight': 10,
+    \ 'updatetime': 1,
+    \ 'auto_resize': 1,
+    \ 'source_names': 'short',
+    \ 'empty': 0,
+    \ 'auto-accel': 1,
+    \})
+
+" TODO: This mapping is alternative to Ctrl-P plugin
+" Try to use it once, and remap the key if you want
+nnoremap <silent> <C-p> :<C-u>Denite -mode=normal file_rec<CR>
+
+" TODO: List all buffer and choose to open it
+" Try to use it once, and remap the key if you want
+nnoremap <silent> [denite-leader]b :<C-u>Denite -mode=normal buffer<CR>
+
+" TODO: search the word in this file just like / , but it can preview
+" Try to use it once, and remap the key if you want
+nnoremap <silent> [denite-leader]/ :<C-u>Denite -buffer-name=search -auto-highlight  -auto-resize line<CR>
+
+" TODO: search globally - search recursively from project root
+" Try to use it once, and remap the key if you want
+nnoremap <silent> [denite-leader]g/ :<C-u>Denite -buffer-name=search -mode=normal grep<CR>
+
+" TODO: search current word in the file, like the *
+" Try to use it once, and remap the key if you want
+nnoremap <silent> [denite-leader]cr :<C-u>DeniteCursorWord  -mode=normal -buffer-name=search -auto-highlight line<CR><C-R><C-W><CR>
+
+" TODO: search current word recursively in project, like the *, but it is global search
+" Try to use it once, and remap the key if you want
+nnoremap <silent> [denite-leader]gc :<C-u>DeniteCursorWord  -mode=normal -buffer-name=search grep<CR><C-R><C-W><CR>
+
+" make the buffer named search not quit after the action is excuted
+call denite#custom#option('search', {
+    \ 'quit': 0,
+    \})
+
+
+ TODO: Denite key mapping is indepentdent of your vim setting, so you need to remap
+" these this key. This key mapping follow the my basic.vim rule.
+call denite#custom#map('insert', 'jk', '<denite:enter_mode:normal>')
+call denite#custom#map('insert', "<C-j>", '<denite:move_to_next_line>')
+call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
+
+call denite#custom#map('insert', "<C-t>", '<denite:do_action:tabopen>')
+call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
+call denite#custom#map('normal', "vs", '<denite:do_action:vsplit>')
+call denite#custom#map('normal', "sp", '<denite:do_action:split>')
+call denite#custom#map('normal', "<C-h>", '<denite:wincmd:h>')
+call denite#custom#map('normal', "<C-j>", '<denite:wincmd:j>')
+call denite#custom#map('normal', "<C-k>", '<denite:wincmd:k>')
+call denite#custom#map('normal', "<C-l>", '<denite:wincmd:l>')
+
+" This setting is too too detail. See ':help denite'
+call denite#custom#source('grep', 'matchers', ['matcher_ignore_globs'])
+call denite#custom#source('line', 'matchers', ['matcher_ignore_globs', 'matcher_regexp'])
+call denite#custom#source('file_rec', 'matchers', ['matcher_fuzzy','matcher_ignore_globs'])
+
+" ignore these things when search
+call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+      \ [
+      \ '.git/', 'build/', '__pycache__/',
+      \ 'images/', '*.o', '*.make',
+      \ '*.min.*',
+      \ 'img/', 'fonts/',
+      \ 'tags', 'cscope*'])
+
+" }}}
 
