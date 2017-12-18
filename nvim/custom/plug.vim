@@ -136,7 +136,7 @@ call denite#custom#option('search', {
     \})
 
 
- TODO: Denite key mapping is indepentdent of your vim setting, so you need to remap
+" TODO: Denite key mapping is indepentdent of your vim setting, so you need to remap
 " these this key. This key mapping follow the my basic.vim rule.
 call denite#custom#map('insert', 'jk', '<denite:enter_mode:normal>')
 call denite#custom#map('insert', "<C-j>", '<denite:move_to_next_line>')
