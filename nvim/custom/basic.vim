@@ -1,7 +1,7 @@
 " General {{{
 
 " Nvim is always "non-compatible" with Vi.
-set nocompatiable
+set nocompatible
 
 " Maximun value of history
 set history=500
