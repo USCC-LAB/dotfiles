@@ -2,7 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " gruvbox scheme
-Plug 'morhetz/gruvbox'  
+Plug 'morhetz/gruvbox'
 
 " file navigator
 Plug 'scrooloose/nerdtree'
