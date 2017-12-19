@@ -86,6 +86,7 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 
 " }}}
+
 " Rainbow Parentheses Improved {{{
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 " }}}
@@ -167,3 +168,4 @@ call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
 
 " }}}
 
+" vim:foldmethod=marker:tabstop=4
