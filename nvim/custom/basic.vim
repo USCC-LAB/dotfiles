@@ -150,4 +150,4 @@ noremap <C-l> <C-W>l
 " }}}
 
 
-vim:foldmethod=marker:tabstop=4
+" vim:foldmethod=marker:tabstop=4
