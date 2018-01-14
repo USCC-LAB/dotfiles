@@ -33,6 +33,10 @@ set autoread
 " Use this command(:W) and type password can solve it.
 " You can replace W to other key which you prefer.
 command W w !sudo tee % > /dev/null
+
+" Auxiliary Line on specified column
+" Good taste for coding neatly (no more than 81 char per line)
+set colorcolumn=81
 " }}}
 
 " Basic {{{
