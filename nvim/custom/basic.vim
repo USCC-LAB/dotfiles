@@ -34,6 +34,9 @@ set autoread
 " You can replace W to other key which you prefer.
 command W w !sudo tee % > /dev/null
 
+" Aid of r/w in same line
+set cursorline
+
 " Auxiliary Line on specified column
 " Good taste for coding neatly (no more than 81 char per line)
 set colorcolumn=81
