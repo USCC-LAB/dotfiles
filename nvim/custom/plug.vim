@@ -26,6 +26,12 @@ Plug 'luochen1990/rainbow'
 " auto-pair
 Plug 'jiangmiao/auto-pairs'
 
+" git gutter
+" Show a git diff in the 'gutter' (sign column). It shows whether each line has
+" been ADDED, MODIFIED, and where lines have been REMOVED. You can also STAGE
+" and UNDO individual hunks.
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 
 " color scheme {{{
@@ -166,6 +172,19 @@ call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
       \ 'img/', 'fonts/',
       \ 'tags', 'cscope*'])
 
+" }}}
+
+" git gutter {{{
+" TODO: Customize your own <Leadder> Key rather than '\'. It would be helpful
+" 		and effient for codding.
+" Just like `git add` but for lines of code in current file
+nmap <Leader>ha <Plug>GitGutterStageHunk
+" `git checkout --` lines of code in current file
+nmap <Leader>hr <Plug>GitGutterUndoHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
+
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
 " }}}
 
 " vim:foldmethod=marker:tabstop=4
