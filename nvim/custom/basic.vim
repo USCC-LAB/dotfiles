@@ -82,6 +82,11 @@ nnoremap k gk
 " ===========================================================
 " nnoremap U :redo<cr>
 
+" TODO: Leader key is important for key combination. The original one is '\'.
+" However, it's quite far and a little untouchable for people. You can replace
+" it with the key you want.
+" ===========================================================
+" let mapleader = ','
 " }}}
 
 " User interface {{{
