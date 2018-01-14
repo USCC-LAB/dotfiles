@@ -34,6 +34,9 @@ set autoread
 " You can replace W to other key which you prefer.
 command W w !sudo tee % > /dev/null
 
+" Display the line and column number of the cursor postion
+set ruler
+
 " Aid of r/w in same line
 set cursorline
 
