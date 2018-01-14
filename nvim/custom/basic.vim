@@ -46,6 +46,9 @@ set cursorline
 " Auxiliary Line on specified column
 " Good taste for coding neatly (no more than 81 char per line)
 set colorcolumn=81
+
+" Ignore specified file when select target (e.g. :vs [Tab])
+set wildignore=*.out,*.o,*.pyc,*~
 " }}}
 
 " Basic {{{
