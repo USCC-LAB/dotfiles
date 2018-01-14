@@ -87,6 +87,10 @@ nnoremap k gk
 " it with the key you want.
 " ===========================================================
 " let mapleader = ','
+
+" TODO: Same reason above for '<esc>'. JUST REPLACE IT if you want.
+" ===========================================================
+" imap jj <esc>
 " }}}
 
 " User interface {{{
