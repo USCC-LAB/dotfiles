@@ -34,6 +34,9 @@ set autoread
 " You can replace W to other key which you prefer.
 command W w !sudo tee % > /dev/null
 
+" Precede each line with its line number 
+set number
+
 " Display the line and column number of the cursor postion
 set ruler
 
