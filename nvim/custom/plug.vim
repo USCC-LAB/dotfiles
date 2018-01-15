@@ -187,11 +187,12 @@ nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 " }}}
 
-" vim:foldmethod=marker:tabstop=4
-
 let plugin_local_cfg='~/.config/nvim/custom/plug.vim.local'
 if !empty(glob(plugin_local_cfg))
     execute "source" plugin_local_cfg
 else
     echo "No plugin local configuration (plug.vim.local) found"
 endif
+
+" XXX: Work only when it's at the end of the file
+" vim:foldmethod=marker:tabstop=4

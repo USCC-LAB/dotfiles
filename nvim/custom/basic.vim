@@ -174,9 +174,6 @@ noremap <C-l> <C-W>l
 
 " }}}
 
-
-" vim:foldmethod=marker:tabstop=4
-
 let basic_local_cfg='~/.config/nvim/custom/basic.vim.local'
 if !empty(glob(basic_local_cfg))
     " XXX: varible in vimscript cannot use directly for shell command
@@ -185,3 +182,6 @@ if !empty(glob(basic_local_cfg))
 else
     echo "No basic local configuration (basic.vim.local) found"
 endif
+
+" XXX: Work only when it's at the end of the file
+" vim:foldmethod=marker:tabstop=4
