@@ -12,3 +12,7 @@ set -l local ~/.config/fish/config.fish.local
 if test -e $local
     source $local
 end
+
+# Default editor setting
+set -Ux EDITOR nvim
+set -Ux VISUAL $EDITOR
