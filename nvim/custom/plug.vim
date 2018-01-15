@@ -187,11 +187,11 @@ nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 " }}}
 
-let plugin_local_cfg='~/.config/nvim/custom/plug.vim.local'
+let plugin_local_cfg='~/.config/nvim/custom/plug.local.vim'
 if !empty(glob(plugin_local_cfg))
     execute "source" plugin_local_cfg
 else
-    echo "No plugin local configuration (plug.vim.local) found"
+    echo "No plugin local configuration (plug.local.vim) found"
 endif
 
 " XXX: Work only when it's at the end of the file
