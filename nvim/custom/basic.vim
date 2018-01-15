@@ -179,7 +179,9 @@ noremap <C-l> <C-W>l
 
 let basic_local_cfg='~/.config/nvim/custom/basic.vim.local'
 if !empty(glob(basic_local_cfg))
-    source basic_local_cfg
+    " XXX: varible in vimscript cannot use directly for shell command
+    " Refer to https://stackoverflow.com/questions/6948024/using-variables-in-a-vim-shell-command
+    execute "source" basic_local_cfg
 else
     echo "No basic local configuration (basic.vim.local) found"
 endif
