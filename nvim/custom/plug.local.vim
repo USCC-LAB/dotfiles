@@ -1,3 +1,5 @@
 " TODO: Customize your own NeoVim environment
 
-echo "I'm in! plug.local.vim"
+" TODO: This line should be commented out, cuz that would make system
+"       pause-and-play mode. Howevker, that's convienient for debugging.
+echo "Import local plugin configuration (plug.local.vim) (Debug)"
