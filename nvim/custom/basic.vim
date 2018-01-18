@@ -174,6 +174,10 @@ noremap <C-l> <C-W>l
 
 " }}}
 
+" Handling of file with specified file type {{{
+autocmd FileType make setlocal noexpandtab
+" }}}
+
 let basic_local_cfg='~/.config/nvim/custom/basic.local.vim'
 if !empty(glob(basic_local_cfg))
     " XXX: varible in vimscript cannot use directly for shell command
