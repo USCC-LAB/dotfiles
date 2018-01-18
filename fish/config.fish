@@ -11,6 +11,8 @@
 set -l local ~/.config/fish/config.fish.local
 if test -e $local
     source $local
+else
+    echo "No local fish-shell configuration (config.fish.local) found"
 end
 
 # Default editor setting
