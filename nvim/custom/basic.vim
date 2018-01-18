@@ -102,7 +102,12 @@ nnoremap k gk
 " }}}
 
 " Text, tab and indent related {{{
-
+" TODO: Tweak them for your own enviroment if necessary.
+" XXX:  It's a common config for general programmer.
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 " }}}
 
 " Visual mode relative {{{
